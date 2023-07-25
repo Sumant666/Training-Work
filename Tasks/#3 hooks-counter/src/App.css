@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: blueviolet;
+  color: black;
+}
+
+#head1{
+  text-align: center;
+  font-size: 40px;
+padding-top: 180px;}
+#head{
+  text-align: center;
+  font-size: 40px;
+}
+.btnn{
+  display: flex;
+  flex-direction: row;
+  margin-left: 660px;
+}
+#btn{
+  width: 100px;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 5px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unique Character Count</title>
+</head>
+<body>
+  <h1>Unique Character Count in a String</h1>
+  <label for="inputString">Enter a string:</label>
+  <input type="text" id="inputString">
+  <button onclick="countUniqueCharactersInString()">Count Unique Characters</button>
+  <p id="resultString"></p>
+
+  <h1>Unique Character Count in an Array</h1>
+  <label for="inputArray">Enter an array (comma-separated):</label>
+  <input type="text" id="inputArray">
+  <button onclick="countUniqueCharactersInArray()">Count Unique Characters</button>
+  <p id="resultArray"></p>
+
+  <script>
+    function countUniqueCharactersInString() {
+      const inputString = document.getElementById("inputString").value;
+      const uniqueCharacters = new Set(inputString);
+      document.getElementById("resultString").innerText = `Unique character count: ${uniqueCharacters.size}`;
+    }
+
+    function countUniqueCharactersInArray() {
+      const inputArrayString = document.getElementById("inputArray").value;
+      const inputArray = inputArrayString.split(",").map(item => item.trim());
+      const uniqueCharacters = new Set();
+
+      for (const element of inputArray) {
+        if (typeof element === "string") {
+          for (const char of element) {
+            uniqueCharacters.add(char);
+          }
+        } else {
+          uniqueCharacters.add(element);
+        }
+      }
+
+      document.getElementById("resultArray").innerText = `Unique character count: ${uniqueCharacters.size}`;
+    }
+  </script>
+</body>
+</html>
