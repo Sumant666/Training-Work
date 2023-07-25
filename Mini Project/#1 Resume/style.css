@@ -1,6 +1,30 @@
-body {
-    color: rgb(0, 0, 0);
-    background-image: url(be7805ef2512cd25bfcdec9e24ae8452.jpg);
-    background-size: cover;
-    background-position-y: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    background-color: darkcyan;
+}
+body hr{
+    width: 100%;
+}
+.contain{
+    width: 70%;
+    margin: 0 10% 0 10%;
+    padding: 0 5% 0 5%;
+    height: 100%;
+}
+.infoc{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.skills{
+    width: 40%;
+    padding-left: 40px;
+    background-color: cadetblue;
+}
+.project{
+    margin-left: 180px;
 }
