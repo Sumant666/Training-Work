@@ -120,8 +120,9 @@ input#name{
     box-shadow: inset 1px 1px 5px rgba(0, 0 , 0 , 0.3);
 }
 
-input#submit{
+button#submit{
     width: 200px;
+    height: 40px;
     padding: 7px;
     font-size: 16px;
     font-family: sans-serif;
