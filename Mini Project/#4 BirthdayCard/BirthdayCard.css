@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    animation: fadeInAnimation 1s forwards;
+
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    background-color:aquamarine;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    opacity: 0;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation: blink 1s infinite;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.blink-animation {
+
+    animation: blink 1s infinite;
+}
+
+p {
+    color: #0c0a0a;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 50%;
+    }
+}
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: chocolate;
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 20px;
+    position: relative;
+    animation: move 5s infinite;
+}
+.circle1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: chocolate;
+    display: inline-block;
+    margin-left: 530px;
+    margin-top: 20px;
+    position: relative;
+    animation: move1 5s infinite;
+}
+
+@keyframes move{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:0px; top:0px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes move1{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:-200px; top:0px;}
+    50%  {background-color:blue; left:0px; top:0px;}
+    75%  {background-color:green; left:0px; top:-200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.sq {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: steelblue;
+    display: inline-block;
+    margin-left: 530px;
+    margin-top: 20px;
+    animation: rotate 5s infinite;
+}
+.sq1{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: steelblue;
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 20px;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+    0%   {background-color:blue; left:0px; top:0px;}
+    25%  {background-color:green; left:200px; top:0px;}
+    50%  {background-color:red; left:200px; top:200px;}
+    75%  {background-color:yellow; left:0px; top:200px;}
+    100% {background-color:blue; left:0px; top:0px;}
+}
